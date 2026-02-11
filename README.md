@@ -1,3 +1,5 @@
+![CI](https://github.com/Rahhal-SWE/ci-testing-pipeline/actions/workflows/ci.yml/badge.svg)
+
 # CI Testing Pipeline (pytest + GitHub Actions)
 
 A small Python project demonstrating automated unit testing and CI using GitHub Actions.
