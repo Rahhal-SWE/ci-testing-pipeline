@@ -1,16 +1,16 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
-from typing import Iterable, Optional
 import re
 import statistics
+from collections.abc import Iterable
+from dataclasses import dataclass
 
 
 @dataclass(frozen=True)
 class PingResult:
     host: str
     ok: bool
-    latency_ms: Optional[float]  # None if failed
+    latency_ms: float | None  # None if failed
 
 
 _PING_RE = re.compile(
